@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="switcher.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>switcher.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="switcher.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>switcher.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
